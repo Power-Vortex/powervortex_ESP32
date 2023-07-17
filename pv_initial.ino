@@ -50,14 +50,14 @@ void loop()
         // Check if the status is true
         if (firebaseData.boolData()) 
         {
-          // Turn the bulb off
+          // Turn the bulb on
           digitalWrite(RELAY_PIN, LOW);
-          Serial.println("Bulb turned OFF");  
+          Serial.println("Bulb turned ON");
         } else 
         {
-          // Turn the bulb on
+          // Turn the bulb off
           digitalWrite(RELAY_PIN, HIGH);
-          Serial.println("Bulb turned ON");
+          Serial.println("Bulb turned OFF");  
         }
       }
     }
